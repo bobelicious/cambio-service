@@ -1,0 +1,17 @@
+server:
+    port: 8000
+spring:
+    application:
+        name: cambio-service
+    datasource:
+        url: jdbc:postgresql://localhost:5432/cambio_service
+        username: postgres
+        password: 123
+    jpa:
+        hibernate: 
+            ddl-auto: update
+    flyway:
+        url: jdbc:postgresql://localhost:5432/cambio_service
+        username: postgres
+        user: postgres
+        password: 123
